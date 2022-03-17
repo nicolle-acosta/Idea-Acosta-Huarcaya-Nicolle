@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+/*Aplicando grid en los layout*/
+.grid-layout{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  auto;
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+}
+#header{
+    grid-area: nav;
+}
+#main{
+    grid-area: main;
+}
+#footer{
+    grid-area: footer;
+}
+/* Acaba grid */
+header{
+    background-color: #D0F9F3;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+    header nav li{
+        font-size:large;
+        text-align: center;
+        padding: 8px;
+        list-style: none ;
+    }
+        header nav li a{
+            text-decoration: none;
+            color: #e09bb9;
+        }
+        header nav li a:hover{
+            color: #b9678a;
+        }
+        
+        header nav a img{
+            display: block;
+            margin: auto;
+        }
+#search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#search-bar input{
+    background-color: #e9cfda;
+    padding: 8px;
+    border: 1px solid rgb(144, 144, 144);
+    border-radius: 0.25rem;
+    width: 70%;
+    
+}
+#search-bar input::placeholder{
+    color: #686a6d;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+#search-bar button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e09bb9;
+    padding: 8px;
+    border: 1px solid rgb(144, 144, 144);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    width: 25%;
+}
+
+.title-1{
+    font-weight:lighter;
+    color: #b9678a;
+    background-color: #ffffff88;
+}
+.txt-1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:medium;
+    background-color: #ffffff88;
+}
+.content-1{
+    padding: 24px;
+    
+}
+.bg-image{
+    background-image: url(../img/patron.jpg);
+}
+.btn-order{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: #D0F9F3;
+    padding: 14px;
+    width: max-content;
+    border: 1px solid rgb(4, 127, 131);
+    display: block;
+    margin: auto;
+}
+.btn-order:hover{
+    background-color: #bee4de;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.item-cat{
+    background-color: #D0F9F3;
+    border: 1px solid #e09bb9;
+    width: 75%;
+    padding: 12px;
+    margin:10px 0;
+}
+.item-cat a{
+    text-decoration: none;
+    text-align: center;
+    color: #e09bb9;
+}
+.item-cat img{
+    display: block;
+    margin: auto;
+    width: 30%
+}
+
+.item-cat:hover{
+    background-color: #bee4de;
+}
+
+.item-left img{
+    width: 100%;
+    height: 100%;
+}
+.item-right{
+    padding: 24px;
+    background-color: #aae7f7;
+}
+
+.item-right h2{
+    font-weight:lighter;
+    color: #e09bb9;
+}
+
+.item-right p{
+    font-weight:lighter;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: #D0F9F3;
+    padding: 12px;
+}
+footer h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e09bb9;
+}
+footer a{
+    font-weight:lighter;
+    font-size: 1rem;
+    color: #bb839b;
+    text-decoration: none;
+    
+}
+footer ul{
+    list-style: none;
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin:  12px 10%;
+}
+.i{
+    fill: #525252;
+    width: 30% ;
+    display: block;
+    margin: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    background-color: #e9cfda;
+    border: 0;
+    font-family:'Montserrat';
+    color: black;
+    font-size: small;
+    border-radius: 5px;
+    width:90%;
+    padding: 12px;
+    margin: 12px 0;
+    align-self: center;
+}
+
+.form button{
+    color: black;
+    background-color: #e9cfda;
+    border: 1px solid #d68aaa;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: small;
+    width: 50%;
+    padding: 12px 8px;
+    text-align: center;
+    align-self: center;
+}
+.form button:hover{
+    background-color: #bea9b2;
+}
+
+/* Estilos pagina productos */
+.title{
+    font-weight:lighter;
+    color: #b9678a;
+    text-align: center;
+    background-color: #D0F9F3;
+    font-size: 3rem;
+    padding: 10px;
+    margin-top: -8px;
+}
+.items{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 20px;
+    padding: 5px;
+    padding-top: 15px;
+    background-color: #e09bb9;
+}
+.producto{
+    padding: 5%;
+    background-color: #e9cfda;
+    height: auto;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.producto h2{
+    font-weight:lighter;
+    color: #b9678a;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 4px;
+}
+.producto p{
+    font-weight:lighter;
+    color: #000000;
+    text-align: center;
+    font-size: 1rem;
+    padding: 4px;
+}
+.parrafo{
+    font-weight:lighter;
+    color: #000000;
+    text-align: center;
+    font-size: 70%;
+    padding: 4px;
+    padding: 15px;
+}
+.parrafo-t{
+    font-weight:lighter;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 4px;
+    padding: 15px;
+}
+.contenedor-nosotros{
+    background-color: #e9cfda;
+}
+.producto button{
+    background-color: #D0F9F3;
+    border: 2px solid #aae7f7;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Montserrat';
+    margin: 15px 0px;
+}
+.producto button:hover{
+    background-color: #a4f5e7;
+}
+.content-local{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9cfda;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d68aaa;
+    margin: 10px;
+}
+form fieldset label{
+    font-size: 1.5rem;
+    color: #b9678a;
+    padding: 10px;
+    margin: 10px;
+}
+form fieldset input{
+    font-size: 1rem;
+    background-color: #e9cfda;
+    padding: 10px;
+    border: 0;
+    margin: 10px;
+    border-radius: 10px;
+}
+form fieldset textarea{
+    font-size: 1rem;
+    background-color: #e9cfda;
+    padding: 10px;
+    border: 0;
+    margin: 10px;
+    border-radius: 10px;
+}
+.btn-enviar{
+    width: 60%;
+    align-self: center;
+    border: 1px solid #b9678a;
+}
+.btn-enviar:hover{
+    background-color: #b9678a;
+}
+
+@media (min-width: 768px){
+    /* responsive nav */
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav .logo{
+        margin-left: 50px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .buscador{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+    }
+    #search-bar {
+        height: 40px;
+    }
+    #search-bar input{
+        margin-right: 10px;
+    }
+    #search-bar button{
+        width: max-content;
+    }
+    /* responsive main */
+    .first-line{
+        display:flex ;
+        flex-direction: row;
+    }
+    .first-line .img-1{
+        width: 100%;
+    }
+    .first-line .content-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .first-line .content-1 .btn-order{
+        display: block;
+        margin: 0 auto;
+    }
+    .categorias{
+        flex-direction: row;
+    }
+    .categorias div{
+        margin-right: 5%;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+    }
+    .nosotros .item-left{
+        width: 50%;
+    }
+    
+    .nosotros .item-right{
+        width: 50%;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        background-color: #aae7f7;
+    }
+    /* responsive footer */
+    footer{
+        padding:4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer div{
+        padding: 8px;
+    }
+    
+
+    footer .siguenos{
+        width: 35%;
+    }
+
+    footer .newsletter{
+        width: 30%;
+    }
+
+    /* responsive page productos */
+    .items{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .header{
+        max-width: 1400px;
+        display: block;
+        margin: auto;
+    }
+    .header-section{
+        background-color: #e09bb9;
+    }
+    
+
+    /* responsive page nosotros */
+    .contenedor-nosotros{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .img-noostros{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    .txt-nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        margin: 5px;
+    }
+    .title{
+        margin-top: 0;
+    }
+    
+    form{
+        display:flex ;
+        justify-content: center;
+    }
+
+    form fieldset{
+        width: 75%;
+    }
+    .btn-enviar{
+        width: 30%;
+    }
+}
