@@ -25,23 +25,26 @@ body{
 }
 /* Acaba grid */
 header{
-    background-color: #D0F9F3;
+    background: rgb(224, 186, 203);
+    background: radial-gradient(circle, rgb(224, 181, 200) 0%, rgba(208,249,243,1) 70%);
+    
     padding: 12px;
     display: flex;
     flex-direction: column;
 }
     header nav li{
-        font-size:large;
+        font-weight: bold;
+        font-size:x-large;
         text-align: center;
         padding: 8px;
         list-style: none ;
     }
         header nav li a{
             text-decoration: none;
-            color: #e09bb9;
+            color: #b9678a;
         }
         header nav li a:hover{
-            color: #b9678a;
+            color: rgb(172, 240, 230);
         }
         
         header nav a img{
