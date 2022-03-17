@@ -7,12 +7,14 @@
     <title>Contacto</title>
     <link rel="icon" href="../img/favicon-1.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/mobile-first.css">
+    <!-- animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="grid-layout">
     <header id="header" >
         <nav >
-            <a href="../index.html" class="logo" id="nav-logo"><img src="../img/logo.jpg" alt="Margie'Su" width="90" height="90"></a>
-            <ul id="nav-items">
+            <a href="../index.html" class="logo" data-aos="flip-left" id="nav-logo"><img src="../img/logo.jpg" alt="Margie'Su" width="90" height="90"></a>
+            <ul data-aos="slide-left" data-aos-duration="3000" id="nav-items">
                 
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -40,8 +42,9 @@
             <div class="header-section">
                 <img class="header" src="../img/header.jpg" alt="Promociones Tortas" width="100%" height="auto">
             </div>
-            
-            <h1 class="title">Contacto</h1>
+            <div class="title">
+                <h1 class="title-hero" data-aos="flip-left">Contacto</h1>
+            </div>
             <form action="envio.php" method="post">
                 <fieldset>
                     <label for="nombre">Nombre Completo</label>
@@ -102,5 +105,12 @@
         </div>
         
     </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

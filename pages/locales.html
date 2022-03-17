@@ -7,12 +7,14 @@
     <title>Locales</title>
     <link rel="icon" href="../img/favicon-1.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/mobile-first.css">
+    <!-- animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="grid-layout">
     <header id="header" >
         <nav >
-            <a href="../index.html" class="logo" id="nav-logo"><img src="../img/logo.jpg" alt="Margie'Su" width="90" height="90"></a>
-            <ul id="nav-items">
+            <a href="../index.html" class="logo" data-aos="flip-left" id="nav-logo"><img src="../img/logo.jpg" alt="Margie'Su" width="90" height="90"></a>
+            <ul data-aos="slide-left" data-aos-duration="3000" id="nav-items">
                 
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -39,8 +41,9 @@
             <div class="header-section">
                 <img class="header" src="../img/header.jpg" alt="Promociones Tortas" width="100%" >
             </div>
-            
-            <h1 class="title">Locales</h1>
+            <div class="title">
+                <h1 class="title-hero" data-aos="flip-left">Locales</h1>
+            </div>
             <div class="content-local">
                 <h3 class="title-1">Sede - Miraflores</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62412.8282906988!2d-77.05119448250852!3d-12.125711673695164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81d64ebef2f%3A0x538baadf63cca807!2sPasteler%C3%ADa%20San%20Antonio%20-%20Miraflores!5e0!3m2!1ses!2spe!4v1644951388858!5m2!1ses!2spe" width="75%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -96,5 +99,11 @@
         </div>
         
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

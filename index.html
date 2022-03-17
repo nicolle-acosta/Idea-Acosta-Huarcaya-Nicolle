@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +9,18 @@
     <title>Margie'Su Pastelería Lima-Perú</title>
     <link rel="icon" href="img/favicon-1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/mobile-first.css">
+    <!-- animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     
 </head>
 <body class="grid-layout">
+    
+
     <header id="header" >
         <nav >
-            <a href="index.html" class="logo" id="nav-logo"><img src="img/logo.jpg" alt="Margie'Su" width="90" height="90"></a>
-            <ul id="nav-items">
+            <a href="index.html" class="logo" data-aos="flip-left" id="nav-logo"><img src="img/logo.jpg" alt="Margie'Su" width="90" height="90"></a>
+            <ul id="nav-items" data-aos="slide-left" data-aos-duration="3000">
                 
                 <li><a href="pages/productos.html">Productos</a></li>
                 <li><a href="pages/nosotros">Nosotros</a></li>
@@ -47,28 +54,28 @@
                     <p class="txt-1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                         duis
                         enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a class="btn-order" href="pages/productos.html">Ordene aquí</a>
+                    <a data-aos="zoom-in" class="btn-order" href="pages/productos.html">Ordene aquí</a>
                 </div>
             </div>
             
             <!-- second line -->
             <div id="cat" class="content-1" >
-                <h2 class="title-1">Visita nuestras categorías</h2>
+                <h2 class="title-1" data-aos="fade-rigth" data-aos-duration="1000">Visita nuestras categorías</h2>
             
                 <div class="categorias">
-                    <div class="item-cat">
+                    <div data-aos="slide-up" class="item-cat">
                         <a  href="pages/productos.html">
                             <img src="img/cake-slice.png" alt="" >
                             <p>Tortas</p>
                         </a>
                     </div>
-                    <div class="item-cat">
+                    <div data-aos="slide-up" class="item-cat">
                         <a  href="pages/productos.html">
                             <img src="img/cookies.png" alt="" >
                             <p>Bocaditos</p>
                         </a>
                     </div>
-                    <div class="item-cat">
+                    <div data-aos="slide-up" class="item-cat">
                         <a  href="pages/productos.html">
                             <img src="img/cup-cake.png" alt="" >
                             <p>Cupcakes</p>
@@ -136,5 +143,12 @@
         </div>
         
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 </html>
