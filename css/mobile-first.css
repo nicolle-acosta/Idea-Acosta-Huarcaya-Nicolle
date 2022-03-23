@@ -4,10 +4,12 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
 }
+
 /*Aplicando grid en los layout*/
 .grid-layout{
     grid-template-columns: repeat(3,1fr);
@@ -25,10 +27,6 @@ body{
 }
 /* Acaba grid */
 header{
-    background: rgb(224, 186, 203);
-    background: radial-gradient(circle, rgb(224, 181, 200) 0%, rgba(208,249,243,1) 70%);
-    
-    padding: 12px;
     display: flex;
     flex-direction: column;
 }
@@ -39,46 +37,8 @@ header{
         padding: 8px;
         list-style: none ;
     }
-        header nav li a{
-            text-decoration: none;
-            color: #b9678a;
-        }
-        header nav li a:hover{
-            color: rgb(172, 240, 230);
-        }
-        
-        header nav a img{
-            display: block;
-            margin: auto;
-        }
-#search-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+       
 
-#search-bar input{
-    background-color: #e9cfda;
-    padding: 8px;
-    border: 1px solid rgb(144, 144, 144);
-    border-radius: 0.25rem;
-    width: 70%;
-    
-}
-#search-bar input::placeholder{
-    color: #686a6d;;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-}
-#search-bar button{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #e09bb9;
-    padding: 8px;
-    border: 1px solid rgb(144, 144, 144);
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    width: 25%;
-}
 
 .title-1{
     font-weight:lighter;
@@ -152,14 +112,24 @@ header{
 }
 
 .item-right h2{
-    font-weight:lighter;
+    font-weight:bold;
     color: #e09bb9;
+    font-size: 3rem;
 }
-
+.cover{
+    object-fit: cover;
+}
+.categorias{
+    display: flex;
+    flex-direction:column;
+    @media (min-width: 768px){
+        flex-direction:row;
+    }
+}
 .item-right p{
-    font-weight:lighter;
+    font-weight:normal;
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
     display: block;
     margin: auto;
