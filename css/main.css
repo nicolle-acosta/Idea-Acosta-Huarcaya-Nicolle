@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap");
+.botonera {
+  background-color: #e09bb9; }
+  .botonera .nav-item {
+    margin: 0 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    background-color: #D0F9F3; }
+  .botonera input {
+    border-radius: 5px;
+    font-size: 1em; }
+  .botonera .btn {
+    background-color: #e9cfda;
+    border-color: #D0F9F3;
+    color: black; }
+    .botonera .btn:hover {
+      background-color: #D0F9F3;
+      color: black; }
+
+main .carousel {
+  z-index: -1; }
+
+footer {
+  background-color: #e09bb9; }

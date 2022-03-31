@@ -1,0 +1,32 @@
+.botonera{
+    background-color: $mainColor;
+    
+    
+    .nav-item{
+        margin: 0 10px;
+        border-radius: 20px;
+        font-size: $textSm;
+        background-color: $secondaryColor;
+    } 
+    input{
+        border-radius: 5px;
+        font-size: $textSm;
+    }
+    .btn{
+        background-color: $keyColor;
+        border-color: $secondaryColor;
+        color: black;
+        &:hover{
+            background-color: $secondaryColor;
+            color: black;
+        }
+    }
+}
+main{
+    .carousel{
+        z-index: -1;
+    }
+}
+footer{
+    background-color: $mainColor;
+}
