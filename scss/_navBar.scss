@@ -3,7 +3,7 @@
     
     
     .nav-item{
-        margin: 0 10px;
+        margin: 10px 10px;
         border-radius: 20px;
         font-size: $textSm;
         background-color: $secondaryColor;
@@ -26,7 +26,4 @@ main{
     .carousel{
         z-index: -1;
     }
-}
-footer{
-    background-color: $mainColor;
 }

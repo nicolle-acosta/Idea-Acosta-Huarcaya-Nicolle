@@ -9,6 +9,8 @@
     <meta name="keywords" content="LOCALES, DELIVERY, TIENDA, REPOSTERÍA">
     <link rel="icon" href="../img/favicon-1.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/mobile-first.css">
+    <!-- sass -->
+    <link rel="stylesheet" href="css/main.css" />
     <!-- animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- bootstrap -->
@@ -17,57 +19,56 @@
     
 </head>
 <body class="grid-layout">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-5" data-aos="flip-left" href="../index.html"><img src="../img/favicon-1.png" alt="Margie'Su"
-                        width="90" height="90"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-aos="slide-left" data-aos-duration="3000">
-                        <li class="nav-item">
-                            <a class="nav-link hover:active" aria-current="page" href="../locales.html">Locales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../productos.html">Tortas</a></li>
-                                <li><a class="dropdown-item" href="../productos.html">Bocaditos</a></li>
-                                <li><a class="dropdown-item" href="../productos.html">Cupcakes</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover:active" aria-current="page" href="../contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" data-aos="flip-left" href="index.html"><img src="img/logo-02.svg" alt="Margie'Su"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-aos="slide-left" data-aos-duration="3000">
+                    <li class="nav-item">
+                        <a class="nav-link hover:active" aria-current="page" href="locales.html">Locales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="productos.html">Tortas</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Bocaditos</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Cupcakes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover:active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <!-- inicia contenido principal -->
     <main id="main">
         <section >
-            <div class="header-section">
-                <img class="header" src="../img/header.jpg" alt="Promociones Tortas" width="100%" >
+          <div class="header-section d-flex flex-row">
+            <img class="hero-img w-50" src="/img/hero.jpg" alt="Promociones Tortas" width="100%" height="auto">
+            <div class="title w-50 d-flex align-items-center justify-content-center">
+              <h1 class="title-hero fw-bold" data-aos="flip-left">Locales</h1>
             </div>
-            <div class="title">
-                <h1 class="title-hero" data-aos="flip-left">Locales</h1>
-            </div>
+        </div>
             <div class="content-local">
                 <h3 class="title-1">Sede - Miraflores</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62412.8282906988!2d-77.05119448250852!3d-12.125711673695164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81d64ebef2f%3A0x538baadf63cca807!2sPasteler%C3%ADa%20San%20Antonio%20-%20Miraflores!5e0!3m2!1ses!2spe!4v1644951388858!5m2!1ses!2spe" width="75%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -79,7 +80,7 @@
         </section>
     </main>
 
-    <footer class="text-center text-lg-start bg-light text-muted d-flex flex-column p-0">
+    <footer class="text-center text-lg-start  text-muted d-flex flex-column p-0">
         <!-- Section: Social media -->
         <section
           class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"

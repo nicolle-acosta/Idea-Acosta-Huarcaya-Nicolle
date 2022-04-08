@@ -227,6 +227,7 @@ footer ul{
     padding: 5px;
     padding-top: 15px;
     background-color: #e09bb9;
+    justify-items: center;
 }
 .producto{
     padding: 5%;
@@ -471,3 +472,4 @@ form fieldset textarea{
         width: 30%;
     }
 }
+
