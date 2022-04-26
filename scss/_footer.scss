@@ -1,3 +1,47 @@
 footer{
     background-color: $mainColor;
+    color: white;
+    .social-media{
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+        border-bottom: 1px solid white;
+        text-align: center;
+        .text{
+            margin-right: 5rem;
+            display: none;
+        }
+        .iconos{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                img{
+                    width: 70px;
+                    padding: 0.5rem;
+                }
+            }
+        }
+        
+        @media (min-width: 992px) {
+            justify-content: space-between;
+            .text{
+                display: block;
+            }
+            .iconos{
+                justify-content: center;
+            }
+        }
+    }
+    .links{
+        .container{
+            text-align: center;
+            margin-top: 3rem;
+            .logo{
+                background-color: white;
+                border-radius: 100%;
+            }
+        }
+    }
 }

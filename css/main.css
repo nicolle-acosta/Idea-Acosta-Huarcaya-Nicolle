@@ -203,4 +203,36 @@ body {
       grid-area: bocaditos; } }
 
 footer {
-  background-color: #58382b; }
+  background-color: #58382b;
+  color: white; }
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid white;
+    text-align: center; }
+    footer .social-media .text {
+      margin-right: 5rem;
+      display: none; }
+    footer .social-media .iconos {
+      width: 30%;
+      display: flex;
+      justify-content: space-between; }
+      footer .social-media .iconos a {
+        text-decoration: none; }
+        footer .social-media .iconos a img {
+          width: 70px;
+          padding: 0.5rem; }
+    @media (min-width: 992px) {
+      footer .social-media {
+        justify-content: space-between; }
+        footer .social-media .text {
+          display: block; }
+        footer .social-media .iconos {
+          justify-content: center; } }
+  footer .links .container {
+    text-align: center;
+    margin-top: 3rem; }
+    footer .links .container .logo {
+      background-color: white;
+      border-radius: 100%; }
