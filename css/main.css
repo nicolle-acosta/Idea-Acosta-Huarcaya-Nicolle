@@ -1,26 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.botonera {
-  background-color: #58382b; }
-  .botonera .nav-item {
-    margin: 10px 10px;
-    border-radius: 20px;
-    font-size: 1em;
-    background-color: #F2ECEB; }
-  .botonera input {
-    border-radius: 5px;
-    font-size: 1em; }
-  .botonera .btn {
-    background-color: #F2C4C8;
-    border-color: #F2ECEB;
-    color: black; }
-    .botonera .btn:hover {
-      background-color: #F2ECEB;
-      color: black; }
-
-main .carousel {
-  z-index: -1; }
-
 nav {
   padding: 10px 20px; }
   nav .logo a img {
@@ -90,47 +69,37 @@ body {
   font-family: "Montserrat", sans-serif !important; }
 
 .hero {
-  max-width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column-reverse; }
-  .hero .img {
-    margin: 0 auto; }
-    .hero .img img {
-      max-height: 40vh;
-      max-width: 100%; }
-  .hero h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #58382b;
-    text-align: center;
-    padding: 10px 0; }
-  .hero p {
-    font-size: 20px;
-    font-weight: 400;
-    color: #58382b;
-    text-align: center;
-    padding: 10px 0; }
-  .hero a {
-    padding: 5px;
-    border: 1px solid #58382b;
-    border-radius: 55px;
-    color: #58382b;
-    font-weight: 400;
-    text-decoration: none;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    width: 60%;
-    cursor: pointer;
-    transition: all 1s linear; }
-    .hero a:hover {
-      color: white;
-      background-color: #58382b; }
+  position: relative;
+  height: 30vh; }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    position: absolute;
+    z-index: -1; }
+  .hero .content-hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .hero .content-hero h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #F2ECEB;
+      text-align: center;
+      padding: 10px 0; }
+    .hero .content-hero p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #F2ECEB;
+      text-align: center;
+      padding: 10px 0; }
   @media (min-width: 520px) {
-    .hero .content h1 {
-      font-size: 35px; } }
+    .hero {
+      height: 40vh; } }
   @media (min-width: 992px) {
     .hero {
       flex-direction: row; }

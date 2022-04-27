@@ -8,7 +8,6 @@
     <meta name="description" content="Este es el sitio web de mi repostería en el que encontrarás todos los productos que ofrecemos, nuestros locales y la manera de contactarse con nosotros.">
     <meta name="keywords" content="REPOSTERÍA, TORTAS, CUPCAKES, BOCADITOS">
     <link rel="icon" href="img/favicon-1.png" type="image/x-icon">
-   <link rel="stylesheet" href="css/mobile-first.css"> -->
     <!-- sass -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- animations -->
@@ -22,198 +21,128 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light  botonera">
-      <div class="container-fluid">
-        <a class="navbar-brand mx-5" data-aos="flip-left" href="index.html"><img src="img/logo-02.svg"
-            alt="Margie'Su"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-aos="slide-left" data-aos-duration="3000">
-            <li class="nav-item">
-              <a class="nav-link hover:active" aria-current="page" href="locales.html">Locales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Productos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="productos.html">Tortas</a></li>
-                <li><a class="dropdown-item" href="productos.html">Bocaditos</a></li>
-                <li><a class="dropdown-item" href="productos.html">Cupcakes</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hover:active" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo Margie'Su Pastelería">
+                </a>
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="links collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link hover:active" aria-current="page" href="locales.html">Locales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="productos.html">Tortas</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Bocaditos</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Cupcakes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover:active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <div class="search-btn">
+                        <input class="" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="" type="submit">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+                            </svg></button>
+                    </div>
+                </div>
+                
+    
+            </div>
+            
         </div>
-      </div>
+    
+    
     </nav>
+
   </header>
-
-    <!-- inicia contenido principal -->
-    <main id="main" >
-        <section>
-          
-
-          <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-            <div class="data-flickity active d-flex flex-row">
-              <img src="img/header.jpg" class="d-block mx-auto w-50 " alt="Diversas Tortas">
-              <div class="container-slider p-5 d-flex flex-column align-items-center justify-content-center">
-                <h5>¡SOOOOOORTEOO DEL MES!</h5>
-                <p>Sigue estos pasos y llévate una torta de chocolate y una tartaleta de fresa¿Cómo participo?Síguenos en
-                  Instagram y Facebook como Margie'Su
-                  Dale like a nuestra foto y etiqueta en Instagram a 3 amig@s con quien compartirías estos premios (a más
-                  comentarios mayor posibilidad de ganar) <br>
-                  Comparte en tu historia esta publicación y etiquetanos (tener público tu ig o mandar foto de la historia)br
-                  Publicaremos a los ganadores el 23 de Setiembre <br>
-                  Suerte!! <br>
-                  #sorteo #buenasuerte #ganadores</p>
-                <button type="button" onclick="location.href = 'productos.html';" class="btn btn-primary">Ordene Aquí</button>
-
-              </div>
-
+  <main>
+    <section class="hero container">
+        <div class="content">
+            <h1>El toque de dulzura que necesitas</h1>
+            <p>Encuentra aquí la mejor colección de dulces</p>
+            <a href="#">Ir a productos</a>
+        </div>
+        <div class="img">
+            <img src="img/pastel-de-chocolate.png" alt="">
+        </div>
+    </section>
+    <section class="all-categories container">
+        <h3>Explora nuestras categorías</h3>
+        <p>Tenemos una exquisita variedad de dulces pensados en ti.</p>
+        <div class=" categories">
+            <div class="category pasteles">
+                <img src="img/pasteles-1.jpg" alt="">
+                <h4>Pasteles</h4>
             </div>
-            <div class="data-flickity active d-flex flex-row">
-              <img src="img/header.jpg" class="d-block mx-auto w-50 " alt="Diversas Tortas">
-              <div class="container-slider p-5 d-flex flex-column align-items-center justify-content-center">
-                <h5>¡SOOOOOORTEOO DEL MES!</h5>
-                <p>Sigue estos pasos y llévate una torta de chocolate y una tartaleta de fresa¿Cómo participo?Síguenos en
-                  Instagram y Facebook como Margie'Su
-                  Dale like a nuestra foto y etiqueta en Instagram a 3 amig@s con quien compartirías estos premios (a más
-                  comentarios mayor posibilidad de ganar) <br>
-                  Comparte en tu historia esta publicación y etiquetanos (tener público tu ig o mandar foto de la historia)br
-                  Publicaremos a los ganadores el 23 de Setiembre <br>
-                  Suerte!! <br>
-                  #sorteo #buenasuerte #ganadores</p>
-                <button type="button" onclick="location.href = 'productos.html';" class="btn btn-primary">Ordene Aquí</button>
-
-              </div>
-
+            <div class="category cupcakes">
+                <img src="img/cupcakes-2.jpg" alt="">
+                <h4>Cupcakes</h4>
             </div>
-            <div class="data-flickity active d-flex flex-row">
-              <img src="img/header.jpg" class="d-block mx-auto w-50 " alt="Diversas Tortas">
-              <div class="container-slider p-5 d-flex flex-column align-items-center justify-content-center">
-                <h5>¡SOOOOOORTEOO DEL MES!</h5>
-                <p>Sigue estos pasos y llévate una torta de chocolate y una tartaleta de fresa¿Cómo participo?Síguenos en
-                  Instagram y Facebook como Margie'Su
-                  Dale like a nuestra foto y etiqueta en Instagram a 3 amig@s con quien compartirías estos premios (a más
-                  comentarios mayor posibilidad de ganar) <br>
-                  Comparte en tu historia esta publicación y etiquetanos (tener público tu ig o mandar foto de la historia)br
-                  Publicaremos a los ganadores el 23 de Setiembre <br>
-                  Suerte!! <br>
-                  #sorteo #buenasuerte #ganadores</p>
-                <button type="button" onclick="location.href = 'productos.html';" class="btn btn-primary">Ordene Aquí</button>
-
-              </div>
-
+            <div class="category bocaditos">
+                <img src="img/bocaditos-1.jpg" alt="">
+                <h4>Bocaditos</h4>
             </div>
+        </div>
+    </section>
+    
+  </main>
 
-          </div>
-            
-            <!-- second line -->
-            <div id="cat" class="content-1" >
-                <h2 class="title-1 mb-5 mt-3" data-aos="fade-rigth" data-aos-duration="1000">Visita nuestras categorías</h2>
-            
-                <div class="d-flex categorias justify-content-around">
-                    <div class="card " style="width: 18rem;">
-                        <img class="card-img-top p-5" src="/img/cake-slice.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Tortas</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="productos.html" class="btn btn-primary">Shop</a>
-                        </div>
-                      </div>
-                      <div class="card " style="width: 18rem;">
-                        <img class="card-img-top p-5" src="/img/cookies.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Bocaditos</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="productos.html" class="btn btn-primary">Shop</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top p-5" src="/img/cup-cake.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Cupcakes</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="productos.html" class="btn btn-primary">Shop</a>
-                        </div>
-                      </div>
-
-                    
-                    
-                </div>
-            </div>
-            <!-- third line -->
-            <div id="nosotros" class="nosotros">
-                <div class="item-left">
-                    <img class="cover" src="img/nosotros.jpg" alt="Equipo de Margie'Su">
-                </div>
-                <div class="item-right">
-                    <h2 class="font-weight-bold">Quiénes somos</h2>
-                    <p class="">Somos una empresa dedicada a la producción y distribución de productos de panadería, pastelería y repostería de alta calidad y sabor; fundada en 2013 en Lima, Perú.</p>
-                    <p class="">Contamos con presencia en Lima y su área metropolitana tanto en tiendas de supermercado, centros comerciales y en nuestras sucursales</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-<footer class="text-center text-lg-start  text-muted d-flex flex-column p-0">
+  <footer>
     <!-- Section: Social media -->
-    <section
-      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-    >
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
+    <section class="social-media">
+      
+      <div class="text">
+        <span>Mantente conectado con nuestras redes sociales:</span>
       </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div>
-        <a href="https://www.facebook.com/Margiesupasteleriafina/" target="_blank" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"><img class="p-3 w-25" src="img/fb-icon.png" alt=""></i>
+      <div class="iconos">
+        <a href="https://www.facebook.com/Margiesupasteleriafina/" target="_blank">
+          <i class="fab fa-facebook-f"><img src="img/fb-icon.png" alt=""></i>
         </a>
-        
-        
-        <a href="https://www.instagram.com/accounts/login/?next=/margiesupasteleriafina/" target="_blank" class="me-4 text-reset">
-          <i class="fab fa-instagram "><img class="p-3 w-25" src="img/ig-icon.png" alt=""></i>
+        <a href="https://www.instagram.com/accounts/login/?next=/margiesupasteleriafina/" target="_blank">
+          <i class="fab fa-instagram "><img src="img/ig-icon.png" alt=""></i>
         </a>
-        
       </div>
-      <!-- Right -->
     </section>
     <!-- Section: Social media -->
   
     <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
+    <section class="links">
+      <div class="container">
         <!-- Grid row -->
         <div class="row mt-3">
-          <!-- Grid column -->
+          <!-- Grid column logo -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4 text-center">
               <i class=""></i>Margie'su Pastelería
             </h6>
-            <img src="img/favicon-1.png" class="img-fluid w-50 d-block mx-auto" alt="">
+            <a href="#">
+            <img src="img/logo.svg"  class="logo img-fluid w-50 d-block mx-auto" alt="">
+            </a>
           </div>
           <!-- Grid column -->
   
-          <!-- Grid column -->
+          <!-- Grid column productos -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
@@ -232,28 +161,28 @@
           </div>
           <!-- Grid column -->
   
-          <!-- Grid column -->
+          <!-- Grid column enlaces -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
               Enlaces
             </h6>
             <p>
-              <a href="#!" class="text-reset">Productos</a>
+              <a href="productos.html" class="text-reset">Productos</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Nosotros</a>
+              <a href="nosotros.html" class="text-reset">Nosotros</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Locales</a>
+              <a href="locales.html" class="text-reset">Locales</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Contacto</a>
+              <a href="contacto.html" class="text-reset">Contacto</a>
             </p>
           </div>
           <!-- Grid column -->
   
-          <!-- Grid column -->
+          <!-- Grid column contacto -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
@@ -281,7 +210,8 @@
     </div>
     <!-- Copyright -->
   </footer>
-  <!-- Footer -->
+  
+
 
     
 
