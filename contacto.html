@@ -83,18 +83,26 @@
         </div>
       </section>
         
-        <section>
-            <form action="error404.html" method="post">
-                <fieldset>
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="text" placeholder="Nicolle Acosta" name="nombre" id="nombre">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja aqui tu mensaje"></textarea>
-                    <input class="btn-enviar" type="submit" value="Enviar">
-                </fieldset>
-                
+        <section class="contacto-form">
+            <form>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie.</div>
+              </div>
+              <div class="mb-3">
+                <label for="Name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Name">
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja aqui tu mensaje"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check">
+                <label class="form-check-label" for="Check">Deseo recibir ofertas y promociones.</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
 
         </section>

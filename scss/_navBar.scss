@@ -1,5 +1,5 @@
 nav{
-        
+    z-index: 9999;    
     padding: 10px 20px;
     .logo{
         a{
@@ -15,6 +15,9 @@ nav{
     }
     .dropdown-menu{
         background-color: $s-transparency!important;
+        @media (min-width:992px) {
+            background-color: $secondaryColor!important;
+        }
         a{
             color: $mainColor;
         }
