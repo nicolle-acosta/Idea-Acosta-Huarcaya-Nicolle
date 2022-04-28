@@ -144,6 +144,9 @@ body {
     color: #58382b;
     padding: 10px 0; }
 
+.categories a {
+  text-decoration: none !important; }
+
 .categories .category {
   display: flex;
   align-items: center;

@@ -114,8 +114,9 @@ body {
 }
 
 .categories {
-
-
+    a{
+        text-decoration:none!important;
+    }
     .category {
         display: flex;
         align-items: center;
